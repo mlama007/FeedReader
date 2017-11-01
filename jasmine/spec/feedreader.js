@@ -97,8 +97,8 @@ $(function() {
 
         it('when loadFeed is done, .feed container has a .entry element', function(){
             expect($('.feed .entry').length).not.toBe(0);
-        })
-    })
+        });
+    });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
     describe('New Feed Selection', function(){
@@ -119,5 +119,5 @@ $(function() {
             finalcontent = $('.feed').html();
             expect(initcontent).not.toBe(finalcontent);
        });
-    })
+    });
 }());

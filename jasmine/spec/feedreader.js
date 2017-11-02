@@ -100,11 +100,14 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        let initcontent, 
+        finalcontent;
+        
         beforeEach(function(done) {
             loadFeed(0, function (){
                 done();
+                initcontent = $('.feed').html();                
             });
-            initcontent = $('.feed').html();                       
        });          
    
         it('the content actually changes', function(){

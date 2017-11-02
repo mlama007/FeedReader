@@ -105,8 +105,8 @@ $(function() {
         
         beforeEach(function(done) {
             loadFeed(0, function (){
-                done();
-                initcontent = $('.feed').html();                
+                initcontent = $('.feed').html();
+                done();                
             });
        });          
    

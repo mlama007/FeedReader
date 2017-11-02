@@ -110,11 +110,12 @@ $(function() {
             });
        });          
    
-        it('the content actually changes', function(){
+        it('the content actually changes', function(done){
             //make sure current content is different than previous content
             loadFeed(1, function (){
                 finalcontent = $('.feed').html();
                 expect(initcontent).not.toBe(finalcontent);
+                done();
             }); 
        });
     });
